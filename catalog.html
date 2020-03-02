@@ -73,6 +73,15 @@
       <section>
         <h2>Фильтры</h2>
         <form method="get" action="https://echo.htmlacademy.ru">
+          <p>Цена</p>
+          <div class="range-slider">
+            <input type="number" value="0" name="min">
+            <input type="number" value="0" name="max">
+            <div class="range-slider-track">
+              <div class="range-slider-pin range-slider-pin-min"></div>
+              <div class="range-slider-pin range-slider-pin-max"></div>
+            </div>
+          </div>
           <fieldset>
             <legend>Производители:</legend>
             <ul>
@@ -115,7 +124,14 @@
         <button type="submit">Показать</button>
       </section>
       <section>
-        <!--Форма-->
+        <form>
+          <h2>Сортировка</h2>
+          <button type="button">По цене</button>
+          <button type="button">По типу</button>
+          <button type="button">По функционалу</button>
+          <button type="button" aria-label="На возрастание"></button>
+          <button type="button" aria-label="На убывание"></button>
+        </form>
       </section>
       <section>
         <h2 class="visually-hidden">Список товаров</h2>
@@ -192,13 +208,13 @@
         </ul>
         <ul>
           <li>
-            <a>1</a>
+            <a aria-label="Первая страница">1</a>
           </li>
           <li>
-            <a href="#">2</a>
+            <a href="#" aria-label="Вторая страница">2</a>
           </li>
           <li>
-            <a href="#">3</a>
+            <a href="#"aria-label="Третья страница">3</a>
           </li>
           <li>
             <a href="#">Следующая</a>
@@ -286,7 +302,7 @@
           <button type="button">Продолжить покупки</button>
         </div>
       </form>
-      <button type="button">Закрыть</button>
+      <button type="button" aria-label="Закрыть">Х</button>
     </section>
   </body>
 </html>
