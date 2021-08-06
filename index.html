@@ -20,7 +20,7 @@
             <input class="search-form" id="global-search" type="search" name="search" placeholder="">
           </form>
           <div class="bookmarks">
-            <a href="#">Закладки: </a>
+            <a href="#">Закладки: 0 </a>
           </div>
           <div class="cart">
             <a href="#">Корзина: 0</a>
@@ -35,7 +35,7 @@
           <h1 class="main-title">Интернет-магазин строительных материалов<br> и инструментов для ремонта</h1>
           <address>
             <div class="phone-link-wrapper">
-              <a class="phone-link" href="">+7 (812) 555-05-55</a>
+              <a class="phone-link" href="">+7(812)555-05-55</a>
             </div>
             <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </address>
@@ -74,7 +74,7 @@
     <main class="container">
       <section class="promo">
         <h2 class="visually-hidden">Промо-блок</h2>
-        <div class="promo-block ">
+        <div class="promo-block">
           <div class="promo-block-item promo-block-mamaterials">
             <p>Материалы</p>
             <a class="button button-promo" href="#">На любой вкус</a>
@@ -90,27 +90,24 @@
         </div>
         <div class="big-promo-block-wrapper">
           <div class="big-promo-block">
-            <div>
+            <div class="big-promo-block-image">
               <ul>
-                <li>
-                  <img src="img/slide-1.jpg"  width="620" height="266" alt="Картинка, на которой нарисован человек с дрелью в руках" >
+                <li class="drill-wrapper">
+                  <img class="drill" src="img/slide-1.jpg"  width="620" height="266" alt="Картинка, на которой нарисован человек с дрелью в руках" >
                   <div class="slider">
                     <b>Дрели</b>
                     <p>Соседям на радость!</p>
                   </div>
-                  <a class="button button-open" href="catalog.html">Открыть каталог</a>
                 </li>
-                <li>
-                  <img src="img/slide-2.jpg"  width="620" height="266" alt="Картинка, на которой нарисован человек с перфоратором в руках">
+                <li class="punchers-wrapper">
+                  <img class="punchers" src="img/slide-2.jpg"  width="620" height="266" alt="Картинка, на которой нарисован человек с перфоратором в руках">
                   <div class="slider">
                     <b>Первораторы</b>
                     <p>Настоящие мужские игрушки</p>
                   </div>
-                  <a class="button button-open" href="catalog.html">Открыть каталог</a>
                 </li>
               </ul>
-              <button class="button-slide" type="button" aria-label="Назад"><</button> <!-- может быть заменить на картинку формата свг-->
-              <button class="button-slide" type="button" aria-label="Вперед">></button>
+              <a class="button button-open" href="catalog.html">Открыть каталог</a>
             </div>
             <div class="small-promo-block">
               <div class="promo-block-item promo-block-sale">
@@ -126,7 +123,7 @@
         </div>
       </section>
       <section class="products">
-        <div class="block">
+        <div class="block products-block">
           <h2 class="second-title">Популярные товары:</h2>
           <a class="button button-block" href="#">Все популярные товары</a>
         </div>
@@ -137,7 +134,7 @@
             <button class="product-item-button product-item-select" type="button">В закладки</button>
             <h3 class="product-item-title">Перфоратор BOSCH BFG 9000</h3>
             <del>32500 Р.</del>
-            <p class="button">25500 Р.</p>
+            <p class="button-price">25500 Р.</p>
           </li>
           <li class="product-item">
             <img class="product-item-image" src="img/product-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
@@ -145,7 +142,7 @@
             <button class="product-item-button product-item-select" type="button">В закладки</button>
             <h3 class="product-item-title">Перфоратор BOSCH BFG 3000</h3>
             <del>22500 Р.</del>
-            <p class="button">15500 Р.</p>
+            <p class="button-price">15500 Р.</p>
           </li>
           <li class="product-item">
             <img class="product-item-image" src="img/product-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
@@ -153,19 +150,19 @@
             <button class="product-item-button product-item-select" type="button">В закладки</button>
             <h3 class="product-item-title">Перфоратор BOSCH BFG 6000</h3>
             <del>30500 Р.</del>
-            <p class="button">25500 Р.</p>
+            <p class="button-price">25500 Р.</p>
           </li>
           <li class="product-item">
-            <img class="product-item-image" src="img/product-4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+            <img class="product-item-image product-item-image-new" src="img/product-4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
             <button class="product-item-button product-item-buy" type="button">Купить</button>
             <button class="product-item-button product-item-select" type="button">В закладки</button>
             <h3 class="product-item-title">Перфоратор BOSCH BFG 2000</h3>
-            <p class="button">12500 Р.</p>
+            <p class="button-price">12500 Р.</p>
           </li>
         </ul>
       </section>
       <section class="manufacturers">
-        <div class="block">
+        <div class="block manufacturers-block">
           <h2 class="second-title">Популярные производители:</h2>
           <a class="button button-block" href="#">Все производители</a>
         </div>
