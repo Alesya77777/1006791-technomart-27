@@ -631,6 +631,7 @@ a {
 .button-block {
   width: 253px;
   min-height: 38px;
+  margin-right: 4px;
 }
 
 .button-promo {
@@ -871,6 +872,7 @@ a {
 }
 
 .second-title {
+  margin-left: 8px;
   font-size: 30px;
   font-weight: normal;
   text-transform: uppercase;
@@ -898,6 +900,7 @@ a {
   width: 218px;
   min-height: 318px;
   border: 1px solid #eaeaea;
+  cursor: pointer;
 }
 
 .product-item-catalog {
@@ -1040,8 +1043,12 @@ a {
   z-index: 20;
 }
 
+.manufacturers {
+  margin-bottom: 60px;
+}
+
 .manufacturers-block {
-  margin-top: 10px;
+  margin-top: 20px;
 
 }
 
@@ -1076,14 +1083,18 @@ a {
 
 .services {
   background-color: #f4f7f9;
+
 }
 
 .services-wrapper {
   width: 940px;
   margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 80px;
 }
 
 .caption {
+  margin-top: 48px;
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 400;
@@ -1099,6 +1110,8 @@ a {
 
 .services-wrapper-part {
   display: flex;
+  position: relative;
+
 }
 
 .services-list {
@@ -1106,15 +1119,28 @@ a {
   flex-direction: column;
   list-style: none;
   padding-left: 0;
+  margin-top: 60px;
+}
+
+.services-list ~ img {
+  margin-top: 60px;
+  position: absolute;
+  left: 230px;
+  top: -50px;
+  background-color: none;
+  z-index: 1;
+
 }
 
 .services-item {
   width: 240px;
   min-height: 61px;
   background-color: #32425c;
+
 }
 
 .services-item button {
+  padding: 15px 125px 15px 30px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
   line-height: 30px;
@@ -1122,7 +1148,12 @@ a {
   color: #ffffff;
   background-color: #32425c;
   border: none;
+  cursor: pointer;
+  box-shadow:   0px 1px 0 0 #293449;
+
 }
+
+
 
 .services-item:hover,
 .services-item:hover button {
@@ -1144,10 +1175,44 @@ a {
 }
 
 .services-content-item {
+  position: relative;
   display: flex;
+  padding-left: 41px;
+}
+
+.services-content-item-part ~ img {
+  position: absolute;
+  left: 190px;
+  top: 60px;
+}
+
+.guarantee-wrapper {
+  display: none;
+}
+.guarantee-wrapper  img  {
+  position: absolute;
+  left: 250px;
+  top: 60px;
+}
+
+.credit-wrapper img {
+  position: absolute;
+  left: 190px;
+  top: 40px;
+}
+
+.credit-wrapper {
+  display: none;
+}
+
+.button-credit {
+  box-sizing: border-box;
+  max-width: 195px;
+  padding: 15px 40px;
 }
 
 .services-caption {
+  margin-bottom: 20px;
   font-size: 36px;
   text-transform: uppercase;
   font-weight: normal;
@@ -1156,6 +1221,7 @@ a {
 }
 
 .services-caption ~ p {
+  padding-top: 5px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -1173,39 +1239,72 @@ a {
   width: 279px;
 }
 
-.delivery-wrapper {
+.contact-wrapper {
   display: flex;
+  padding-left: 2px;
   justify-content: space-between;
   width: 940px;
   margin: 0 auto;
 }
 
+
+
 .delivery {
   display: flex;
   flex-direction: column;
+  margin-top: 31px;
+  padding-left: 0;
+  max-width: 519px;
 }
 
 .delivery-description {
-  width: 519px;
+  min-width: 519px;
+  margin-top: 0;
 }
 
 .delivery-supply {
   width: 400px;
 }
 
+.transport-company-list {
+  list-style: none;
+  margin-top: 0;
+  padding-top: 7px;
+  margin-left: 0;
+  padding-left: 35px;
+}
+
 .transport-company-item {
+  font-family: "Cuprum", "Arial", sans-serif;;
   font-size: 18px;
   line-height: 20px;
+  padding-bottom: 20px;
+}
+
+.button-transport-company {
+  max-width: 220px;
+  margin-bottom: 85px;
 }
 
 .contact {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  margin-top: 30px;
+  margin-left: 119px;
+  margin-bottom: 0;
+
 }
 
 .contact-text {
-  width: 179px;
+  display: block;
+  max-width: 179px;
+  padding-top: -30px;
+  margin-top: 0;
+}
+
+.contact-link {
+  margin-top: 20px;
+  padding-bottom: 36px;
 }
 
 .pagination-list {
@@ -1270,6 +1369,7 @@ a {
 
 .first-footer {
   background-color: #32425c;
+  padding-bottom: 40px;
 }
 
 .first-footer-wrapper {
@@ -1313,7 +1413,9 @@ a {
 }
 
 .footer-contacts p {
-  margin: 0;
+  display: block;
+  margin:  0;
+  min-width: 330px;
 }
 
 .footer-promo {
@@ -1346,7 +1448,8 @@ a {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
-  margin: 0;
+  margin: auto 0;
+  margin-top: 41px;
 }
 
 .footer-copyright small {
