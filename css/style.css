@@ -744,6 +744,7 @@ a {
 
 .filter-list {
   padding: 0;
+  margin-bottom: 0;
 }
 
 .filter-item {
@@ -754,13 +755,19 @@ a {
   padding-bottom: 20px;
 }
 
+.filter-manufacturers  .filter-item:last-child {
+  padding-bottom: 0;
+}
+
 .filter-item input[type=checkbox],
 .filter-item input[type=radio] {
   -webkit-appearance: none;
   appearance: none;
 }
 
-.filter-manufacturers .filter-item label::before {
+.filter-manufacturers .filter-item:nth-child(2) label::before,
+.filter-manufacturers .filter-item:nth-child(4) label::before,
+.filter-manufacturers .filter-item:nth-child(5) label::before   {
   content: "";
   position: absolute;
   padding-right: 15px;
@@ -774,7 +781,20 @@ a {
   background-position: 0 0;
 }
 
-
+.filter-manufacturers .filter-item:first-child label::before,
+.filter-manufacturers .filter-item:nth-child(3) label::before {
+  content: "";
+  position: absolute;
+  padding-right: 15px;
+  left: 0;
+  top: -2px;
+  margin-right: 15px;
+  width: 23px;
+  min-height: 23px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
 
 .filter-item label {
   padding-left: 28px;
@@ -784,6 +804,43 @@ a {
   font-weight: normal;
   line-height: 20px;
   color: #000000;
+}
+
+.second-line{
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.filter-supply .filter-name {
+  margin-top: 0;
+}
+
+.filter-supply .filter-item:nth-child(2) label::before   {
+  content: "";
+  position: absolute;
+  padding-right: 15px;
+  left: 0;
+  top: -2px;
+  margin-right: 15px;
+  width: 25px;
+  min-height: 25px;
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-supply .filter-item:first-child label::before {
+  content: "";
+  position: absolute;
+  padding-right: 15px;
+  left: 0;
+  top: -2px;
+  margin-right: 15px;
+  width: 25px;
+  min-height: 25px;
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .filter-button {
@@ -796,6 +853,8 @@ a {
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
   border-radius: 2px;
+  padding: 9px 38px;
+  margin-top: 57px;
 }
 
 .product-wrapper {
