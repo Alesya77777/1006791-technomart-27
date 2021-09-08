@@ -120,24 +120,39 @@
               <legend class="filter-name">Производители:</legend>
               <ul class="filter-list">
                 <li class="filter-item">
-                  <input id="filter-bosch" type="checkbox" name="bosch" checked>
-                  <label for="filter-bosch">BOSCH</label>
+                  <label class= "filter-wrapper" for="filter-bosch">
+                    <input class="visually-hidden" id="filter-bosch"  type="checkbox" name="bosch" checked>
+                    <span class="checkbox-indicator"></span>
+                    BOSCH
+                  </label>
                 </li>
                 <li class="filter-item">
-                  <input id="filter-interskol" type="checkbox" name="interskol" >
-                  <label for="filter-interskol">ИНТЕРСКОЛ</label>
+                  <label class= "filter-wrapper" for="filter-interskol">
+                    <input class="visually-hidden"  id="filter-interskol" type="checkbox" name="interskol" >
+                    <span class="checkbox-indicator"></span>
+                    ИНТЕРСКОЛ
+                  </label>
                 </li>
                 <li class="filter-item">
-                  <input id="filter-makita" type="checkbox" name="makita" checked>
-                  <label for="filter-makita">MAKIta</label>
+                  <label class= "filter-wrapper" for="filter-makita">
+                    <input class="visually-hidden"   id="filter-makita" type="checkbox" name="makita" checked>
+                    <span class="checkbox-indicator"></span>
+                    MAKIta
+                  </label>
                 </li>
                 <li class="filter-item">
-                  <input id="filter-dewalt" type="checkbox" name="dewalt" >
-                  <label for="filter-dewalt">Dewalt</label>
+                  <label class= "filter-wrapper" for="filter-dewalt">
+                    <input class="visually-hidden"  id="filter-dewalt" type="checkbox" name="dewalt" >
+                    <span class="checkbox-indicator"></span>
+                    Dewalt
+                  </label>
                 </li>
                 <li class="filter-item">
-                  <input id="filter-hitachi" type="checkbox" name="hitachi" >
-                  <label for="filter-hitachi">Hitachi</label>
+                  <label class= "filter-wrapper" for="filter-hitachi">
+                    <input class="visually-hidden"  id="filter-hitachi" type="checkbox" name="hitachi" >
+                    <span class="checkbox-indicator"></span>
+                    Hitachi
+                  </label>
                 </li>
               </ul>
             </fieldset>
@@ -146,16 +161,22 @@
               <legend class="filter-name">Питание:</legend>
               <ul class="filter-list">
                 <li class="filter-item">
-                  <input id="filter-rechargeable" type="radio" name="type-power"  value="rechargeable" checked>
-                  <label for="filter-rechargeable">Аккумуляторные</label>
+                  <label class= "filter-wrapper" for="filter-rechargeable">
+                    <input class="visually-hidden" id="filter-rechargeable" type="radio" name="type-power"  value="rechargeable" checked>
+                    <span class="radiobutton-indicator"></span>
+                    Аккумуляторные
+                  </label>
                 </li>
                 <li class="filter-item">
-                  <input id="filter-network" type="radio" name="type-power" value="network" >
-                  <label for="filter-network">Сетевые</label>
+                  <label class= "filter-wrapper" for="filter-network">
+                    <input class="visually-hidden" id="filter-network" type="radio" name="type-power" value="network" >
+                    <span class="radiobutton-indicator"></span>
+                    Сетевые
+                  </label>
                 </li>
               </ul>
             </fieldset>
-            <button class="filter-button" ype="submit">Показать</button>
+            <button class="filter-button" type="button">Показать</button>
           </form>
         </section>
         <div class="product-wrapper">
@@ -369,7 +390,7 @@
       </div>
       </div>
     </footer>
-    <section class="buy">
+    <section class="modal buy">
       <form class="model-buy">
         <p class="model-decoration"></p>
         <h2 class="visually-hidden">Оповещение</h2>
@@ -379,7 +400,9 @@
           <button class="button button-buy" type="button">Продолжить покупки</button>
         </div>
       </form>
-      <button class="model-close" type="button" aria-label="Закрыть">Х</button>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </section>
   </body>
 </html>
