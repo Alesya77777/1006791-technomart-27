@@ -89,6 +89,7 @@ a {
   min-height: 47px;
   background-color: #ee3643;
   box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.24);
+
 }
 
 .main-header-logo:hover {
@@ -462,6 +463,7 @@ a {
   background-color: #ffffff;
   margin-top: 8px;
   padding: 10px 0;
+  cursor: pointer;
 }
 
 .user-name {
@@ -471,7 +473,17 @@ a {
   padding-right: 10px;
 }
 
+.user-wrapper:hover svg path{
+  fill:  #2e405c;
+}
 
+.user-wrapper:active svg path{
+  fill:  rgba(50, 66, 92, 0.3);
+}
+
+.user-name:active {
+  color:  rgba(50, 66, 92, 0.3);
+}
 
 
 .user-cabinet-list {
@@ -484,6 +496,14 @@ a {
 
 .user-cabinet-item {
   list-style: none;
+}
+
+.user-cabinet-item:hover a{
+  color: #ee3643;
+}
+
+.user-cabinet-item:active a{
+  color: rgba(50, 66, 92, 0.3);
 }
 
 .user-cabinet-item:last-child::before {
@@ -717,7 +737,7 @@ a {
 }
 
 .filter-type {
-  padding: 6px 0 8px 15px;
+  padding: 6px 140px 8px 15px;
   padding-top: 15px;
   margin: 0;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -880,17 +900,31 @@ a {
 
 .sorting {
   display: flex;
+  align-items: center;
   min-width: 38px;
   background-color: #f7f3ec;
 }
 
 .button-filter-type {
-  outline: none;
   border: none;
   background-color: transparent;
 }
 
+.button-filter-up svg path{
+  fill: #ee3643;
+
+}
+
+.button-filter-up svg {
+  padding-right: 10px;
+}
+
+.button-filter-down svg path{
+  fill: #c5c5c5;
+}
+
 .indicators-price {
+  padding-right: 60px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -903,6 +937,7 @@ a {
 
 .indicators-type,
 .indicators-function {
+  padding-bottom: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -910,8 +945,27 @@ a {
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.3);
   border: none;
-  border-bottom: 1px dotted #ee3643;
+
   background-color: #f7f3ec;
+}
+
+.indicators-type {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-right: 60px;
+}
+
+.indicators-type span{
+
+  border-bottom: 1px dotted #ee3643;
+}
+.indicators-function {
+  padding-right: 40px;
+
+}
+
+.indicators-function span{
+  border-bottom: 1px dotted #ee3643;
 }
 
 .promo-block {
@@ -1779,6 +1833,7 @@ product-item-new
 
 .main-footer-logo {
   min-height: 68px;
+  cursor: pointer;
 }
 
 .footer-menu {
