@@ -2105,6 +2105,10 @@ product-item-new
   z-index: 2;
 }
 
+.modal-show {
+  display: block;
+}
+
 .support-wrapper {
   display: flex;
   flex-direction: row;
@@ -2163,6 +2167,7 @@ product-item-new
   border: 2px solid #ee3643;
   border-radius: 3px;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .button-form:hover {
